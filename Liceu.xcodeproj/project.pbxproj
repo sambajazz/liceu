@@ -10,14 +10,30 @@
 		AF5004EE303B9E71005F8387 /* FSRS in Frameworks */ = {isa = PBXBuildFile; productRef = AF5004ED303B9E71005F8387 /* FSRS */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AF5004FC303BA2E2005F8387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000100000000;
+			remoteInfo = Liceu;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* Liceu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Liceu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5004F8303BA2E2005F8387 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		000000000000000000000010 /* Liceu */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Liceu;
+			sourceTree = "<group>";
+		};
+		AF5004F9303BA2E2005F8387 /* Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -29,6 +45,11 @@
 				AF5004EE303B9E71005F8387 /* FSRS in Frameworks */,
 			);
 		};
+		AF5004F5303BA2E2005F8387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				000000000000000000000010 /* Liceu */,
+				AF5004F9303BA2E2005F8387 /* Tests */,
 				000000000000000000000020 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				000000000000000000000120 /* Liceu.app */,
+				AF5004F8303BA2E2005F8387 /* Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +95,27 @@
 			productReference = 000000000000000000000120 /* Liceu.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AF5004F7303BA2E2005F8387 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5004FE303BA2E2005F8387 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				AF5004F4303BA2E2005F8387 /* Sources */,
+				AF5004F5303BA2E2005F8387 /* Frameworks */,
+				AF5004F6303BA2E2005F8387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF5004FD303BA2E2005F8387 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AF5004F9303BA2E2005F8387 /* Tests */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = AF5004F8303BA2E2005F8387 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -79,11 +123,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2630;
+				LastSwiftUpdateCheck = 2700;
 				LastUpgradeCheck = 2700;
 				TargetAttributes = {
 					000000000000000100000000 = {
 						CreatedOnToolsVersion = 26.3;
+					};
+					AF5004F7303BA2E2005F8387 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = 000000000000000100000000;
 					};
 				};
 			};
@@ -106,12 +154,18 @@
 			projectRoot = "";
 			targets = (
 				000000000000000100000000 /* Liceu */,
+				AF5004F7303BA2E2005F8387 /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		000000000000000140000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		AF5004F6303BA2E2005F8387 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
 			);
@@ -124,7 +178,20 @@
 			files = (
 			);
 		};
+		AF5004F4303BA2E2005F8387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF5004FD303BA2E2005F8387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000100000000 /* Liceu */;
+			targetProxy = AF5004FC303BA2E2005F8387 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		000000000000000011000000 /* Debug configuration for PBXProject "Liceu" */ = {
@@ -347,6 +414,60 @@
 			};
 			name = Release;
 		};
+		AF5004FF303BA2E2005F8387 /* Debug configuration for PBXNativeTarget "Tests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8JA8GYC22N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.6;
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thigcampos.liceu.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Liceu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Liceu";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		AF500500303BA2E2005F8387 /* Release configuration for PBXNativeTarget "Tests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8JA8GYC22N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.6;
+				MACOSX_DEPLOYMENT_TARGET = 26.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thigcampos.liceu.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Liceu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Liceu";
+				XROS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -363,6 +484,14 @@
 			buildConfigurations = (
 				000000000000000111000000 /* Debug configuration for PBXNativeTarget "Liceu" */,
 				000000000000000112000000 /* Release configuration for PBXNativeTarget "Liceu" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		AF5004FE303BA2E2005F8387 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5004FF303BA2E2005F8387 /* Debug configuration for PBXNativeTarget "Tests" */,
+				AF500500303BA2E2005F8387 /* Release configuration for PBXNativeTarget "Tests" */,
 			);
 			defaultConfigurationName = Release;
 		};
