@@ -1,13 +1,12 @@
-import SwiftUI
-import Playgrounds
+//
+//  ContentView.swift
+//  Liceu
+//
+//  Created by Thiago Campos on 23/08/26.
+//
 
-@main struct MyApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
+import Playgrounds
+import SwiftUI
 
 struct ContentView: View {
     var body: some View {
