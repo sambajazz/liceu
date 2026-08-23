@@ -1,0 +1,15 @@
+{
+  "originHash" : "699b10dc66ce123928e9d402e18f53ad2d636743162624d6b01ff4e6b8b5ae66",
+  "pins" : [
+    {
+      "identity" : "fsrs",
+      "kind" : "remoteSourceControl",
+      "location" : "https://codeberg.org/thigcampos/fsrs",
+      "state" : {
+        "branch" : "main",
+        "revision" : "018ff14c04b156d4ad3fbd2751421ca285a83325"
+      }
+    }
+  ],
+  "version" : 3
+}
