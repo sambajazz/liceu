@@ -14,6 +14,6 @@ struct Liceu: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: [Deck.self])
+        .modelContainer(for: [Deck.self, Flashcard.self])
     }
 }
