@@ -22,6 +22,9 @@ final class Deck {
     var reviewsPerDay: Int
     var fsrsParameters: FSRSParameters
 
+    @Relationship(deleteRule: .cascade, inverse: \Flashcard.deck)
+    var flashcards: [Flashcard] = []
+
     init(name: String, summary: String? = nil, isArchived: Bool = false) {
         self.name = name
         self.summary = summary

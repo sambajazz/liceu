@@ -48,6 +48,16 @@ struct DeckTests {
         #expect(deck.fsrsParameters.enableFuzz == false)
         #expect(deck.fsrsParameters.enableShortTerm == true)
     }
+
+    @Test("Deck has Flashcards")
+    func deckHasFlashcards() {
+        let deck = Deck(name: "French")
+        #expect(deck.flashcards == [])
+
+        let flashcard = Flashcard(front: "Bonjour", back: "Bom dia")
+        deck.flashcards = [flashcard]
+        #expect(deck.flashcards == [flashcard])
+    }
 }
 
 struct FlashcardTests {
