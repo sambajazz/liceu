@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF5004EE303B9E71005F8387 /* FSRS in Frameworks */ = {isa = PBXBuildFile; productRef = AF5004ED303B9E71005F8387 /* FSRS */; };
+		AF76B28B306A68E600BB6BEA /* FSRS in Frameworks */ = {isa = PBXBuildFile; productRef = AF76B28A306A68E600BB6BEA /* FSRS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +42,7 @@
 		000000000000000130000000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
-				AF5004EE303B9E71005F8387 /* FSRS in Frameworks */,
+				AF76B28B306A68E600BB6BEA /* FSRS in Frameworks */,
 			);
 		};
 		AF5004F5303BA2E2005F8387 /* Frameworks */ = {
@@ -89,7 +89,7 @@
 			);
 			name = Liceu;
 			packageProductDependencies = (
-				AF5004ED303B9E71005F8387 /* FSRS */,
+				AF76B28A306A68E600BB6BEA /* FSRS */,
 			);
 			productName = MyApp;
 			productReference = 000000000000000000000120 /* Liceu.app */;
@@ -146,7 +146,7 @@
 			mainGroup = 000000000000000000000001;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				AF5004EC303B9E71005F8387 /* XCRemoteSwiftPackageReference "fsrs" */,
+				AF76B289306A68E600BB6BEA /* XCRemoteSwiftPackageReference "fsrs" */,
 			);
 			preferredProjectObjectVersion = 90;
 			productRefGroup = 000000000000000000000020 /* Products */;
@@ -498,9 +498,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		AF5004EC303B9E71005F8387 /* XCRemoteSwiftPackageReference "fsrs" */ = {
+		AF76B289306A68E600BB6BEA /* XCRemoteSwiftPackageReference "fsrs" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://codeberg.org/thigcampos/fsrs";
+			repositoryURL = "https://codeberg.org/belavista/fsrs";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -509,9 +509,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		AF5004ED303B9E71005F8387 /* FSRS */ = {
+		AF76B28A306A68E600BB6BEA /* FSRS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AF5004EC303B9E71005F8387 /* XCRemoteSwiftPackageReference "fsrs" */;
+			package = AF76B289306A68E600BB6BEA /* XCRemoteSwiftPackageReference "fsrs" */;
 			productName = FSRS;
 		};
 /* End XCSwiftPackageProductDependency section */

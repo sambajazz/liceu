@@ -1,13 +1,13 @@
 {
-  "originHash" : "699b10dc66ce123928e9d402e18f53ad2d636743162624d6b01ff4e6b8b5ae66",
+  "originHash" : "ee3edf58564762354e08c5850eeda7026a785f493657bbfcafe50c6847d69dfa",
   "pins" : [
     {
       "identity" : "fsrs",
       "kind" : "remoteSourceControl",
-      "location" : "https://codeberg.org/thigcampos/fsrs",
+      "location" : "https://codeberg.org/belavista/fsrs",
       "state" : {
         "branch" : "main",
-        "revision" : "018ff14c04b156d4ad3fbd2751421ca285a83325"
+        "revision" : "8ccad0b5a7fbe6429f15debba66f553acbd7ae32"
       }
     }
   ],
